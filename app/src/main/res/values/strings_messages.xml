@@ -1,0 +1,6 @@
+<resources>
+    <!--<string name="app_name">MyApplication</string>-->
+    <string name="application_error">Application error. Please log out and log in again</string>
+    <string name="requestTimedOut">Request timed out. Please try again</string>
+    <string name="alert_header">Title</string>
+</resources>

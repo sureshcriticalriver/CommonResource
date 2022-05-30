@@ -1,0 +1,69 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--<dimen name="action_bar_size">@dimen/_35dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="backbutton_width">@dimen/_15dp</dimen>
+    <dimen name="backbutton_height">@dimen/_14dp</dimen>
+    <dimen name="screen_title">@dimen/_17sp</dimen>
+    <dimen name="button_width">@dimen/_180dp</dimen>
+    <dimen name="button_height">@dimen/_38dp</dimen>
+    <dimen name="button_text_size">@dimen/_16dp</dimen>
+    <dimen name="toggle_button_width">@dimen/_51dp</dimen>
+    <dimen name="toggle_button_height">@dimen/_31dp</dimen>
+    <dimen name="sub_title_text_size">@dimen/_16sp</dimen>
+    <dimen name="primary_button_height">@dimen/_34dp</dimen>
+    <dimen name="primary_button_text_size">@dimen/txt_paragraph_medium</dimen>-->
+
+    <dimen name="otp_view_item_size">48dp</dimen>
+    <dimen name="otp_view_item_radius">5dp</dimen>
+    <dimen name="otp_view_item_spacing">5dp</dimen>
+    <dimen name="otp_view_item_line_width">2dp</dimen>
+    <dimen name="otp_view_cursor_width">2dp</dimen>
+    <dimen name="_64dp">64</dimen>
+
+    <!--
+        <dimen name="txt_heading_size_h7">@dimen/_13sp</dimen>&lt;!&ndash;Figma 16sp&ndash;&gt;
+        <dimen name="txt_heading_size_h6">@dimen/_15sp</dimen>&lt;!&ndash;Figma 18sp&ndash;&gt;
+        <dimen name="txt_heading_size_h5">@dimen/_17sp</dimen>&lt;!&ndash;Figma 20sp&ndash;&gt;
+        <dimen name="txt_heading_size_h4">@dimen/_19sp</dimen>&lt;!&ndash;Figma 22sp&ndash;&gt;
+        <dimen name="txt_heading_size_h3">@dimen/_21sp</dimen>&lt;!&ndash;Figma 26sp&ndash;&gt;
+        <dimen name="txt_heading_size_h2">@dimen/_25sp</dimen>&lt;!&ndash;Figma 32sp&ndash;&gt;
+        <dimen name="txt_heading_size_h1">@dimen/_31sp</dimen>&lt;!&ndash;Figma 40sp&ndash;&gt;
+
+        <dimen name="txt_paragraph_large">@dimen/_13sp</dimen>&lt;!&ndash;Figma 16sp&ndash;&gt;
+        <dimen name="txt_paragraph_medium">@dimen/_12sp</dimen>&lt;!&ndash;Figma 14sp&ndash;&gt;
+        <dimen name="txt_paragraph_regular">@dimen/_11sp</dimen>&lt;!&ndash;Figma 13sp&ndash;&gt;
+        <dimen name="txt_paragraph_small">@dimen/_10sp</dimen>&lt;!&ndash;Figma 12sp&ndash;&gt;
+        <dimen name="txt_paragraph_tiny">@dimen/_9sp</dimen>&lt;!&ndash;Figma 11sp&ndash;&gt;
+
+        <dimen name="password_eye_icon_width">@dimen/_20dp</dimen>
+        <dimen name="password_eye_icon_height">@dimen/_20dp</dimen>-->
+
+    <!--New Design v2 Dimen values-->
+   <!-- <dimen name="title">@dimen/_17sp</dimen> &lt;!&ndash;Figma 20&ndash;&gt;
+    <dimen name="title_section">@dimen/_14sp</dimen> &lt;!&ndash;Figma 17&ndash;&gt;
+    <dimen name="lable">@dimen/_14sp</dimen> &lt;!&ndash;Figma 17&ndash;&gt;
+    <dimen name="lable_button">@dimen/_13sp</dimen> &lt;!&ndash;Figma 16&ndash;&gt;
+    <dimen name="lable_link">@dimen/_14sp</dimen> &lt;!&ndash;Figma 17&ndash;&gt;
+    <dimen name="lable_small">@dimen/_12sp</dimen> &lt;!&ndash;Figma 14&ndash;&gt;
+    <dimen name="value">@dimen/_17sp</dimen> &lt;!&ndash;Figma 20&ndash;&gt;
+    <dimen name="value_user_set">@dimen/_17sp</dimen> &lt;!&ndash;Figma 20&ndash;&gt;
+    <dimen name="value_description">@dimen/_13sp</dimen> &lt;!&ndash;Figma 16&ndash;&gt;
+    <dimen name="value_description_small">@dimen/_12sp</dimen> &lt;!&ndash;Figma 14&ndash;&gt;
+    <dimen name="nav_link">@dimen/_10sp</dimen> &lt;!&ndash;Figma 12&ndash;&gt;
+    <dimen name="value_lrg">@dimen/_19sp</dimen> &lt;!&ndash;Figma 22&ndash;&gt;
+    <dimen name="text_input_field">@dimen/_15dp</dimen>&lt;!&ndash;Figma 17&ndash;&gt;
+    &lt;!&ndash;Page Margin left and right&ndash;&gt;
+    <dimen name="page_margin_left">@dimen/_16dp</dimen> &lt;!&ndash;Figma 18&ndash;&gt;
+    <dimen name="page_margin_right">@dimen/_16dp</dimen> &lt;!&ndash;Figma 18&ndash;&gt;
+    &lt;!&ndash;Toggle button&ndash;&gt;
+    <dimen name="toggle_switch_button_width">@dimen/_40dp</dimen>
+    <dimen name="toggle_switch_button_height">@dimen/_25dp</dimen>
+    &lt;!&ndash;Button margins & Paddings&ndash;&gt;
+    <dimen name="button_left_padding">@dimen/_18dp</dimen>
+    <dimen name="button_right_padding">@dimen/_18dp</dimen>
+    <dimen name="button_left_margin">@dimen/_25dp</dimen>
+    <dimen name="button_right_margin">@dimen/_25dp</dimen>-->
+
+</resources>
