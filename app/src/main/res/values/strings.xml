@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MyApplication</string>
-    <!--
-    Call API path here
-    -->
+    <!--Call API path here-->
+
+    <string name="test_api">https://reqres.in/api/products/3</string>
 </resources>
