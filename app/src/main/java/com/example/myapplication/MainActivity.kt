@@ -8,7 +8,9 @@ import com.example.myapplication.model.Products
 import com.example.myapplication.network.ApiStatus
 import com.example.myapplication.utils.Utilities
 import com.example.myapplication.viewmodel.ProductsViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     var listProducts: MutableLiveData<Products> = MutableLiveData()
     private lateinit var mainViewModel : ProductsViewModel
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         Utilities.logEwithoutLogStore("---LogE without log store ")
 
 
-         mainViewModel = ViewModelProviders.of(this).get(ProductsViewModel::class.java)
+         mainViewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
 
 
 

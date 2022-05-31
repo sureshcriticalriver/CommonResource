@@ -1,18 +1,20 @@
 package com.example.myapplication.utils
 
+import android.app.Application
 import android.content.Context
 import androidx.multidex.MultiDexApplication
 import com.example.myapplication.utils.MyApplication
 import androidx.multidex.MultiDex
+import dagger.hilt.android.HiltAndroidApp
 import kotlin.jvm.Synchronized
 
-class MyApplication : MultiDexApplication() {
+@HiltAndroidApp
+class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
     }
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(base)
-        MultiDex.install(this)
     }
 
     companion object {
