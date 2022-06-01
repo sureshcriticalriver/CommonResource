@@ -2,8 +2,7 @@ package com.example.myapplication.utils
 
 import com.example.myapplication.utils.ApplicationPreferences.getLog
 import kotlin.Throws
-import com.example.myapplication.utils.MyApplication
-import com.example.myapplication.utils.ApplicationPreferences
+import com.example.myapplication.view.MyApplication
 import com.example.myapplication.R
 import android.os.Build.VERSION
 import androidx.core.content.ContextCompat
@@ -12,11 +11,8 @@ import android.Manifest.permission
 import android.annotation.SuppressLint
 import android.app.*
 import android.widget.Toast
-import android.content.DialogInterface
-import android.net.NetworkInfo
 import android.net.ConnectivityManager
 import android.content.Intent
-import android.view.View.OnTouchListener
 import android.view.MotionEvent
 import android.widget.EditText
 import android.view.ViewGroup
@@ -33,7 +29,6 @@ import org.json.JSONException
 import org.json.JSONArray
 import android.view.animation.Animation
 import android.view.animation.AlphaAnimation
-import android.content.pm.PackageInfo
 import android.content.res.Resources
 import android.graphics.*
 import android.net.Uri

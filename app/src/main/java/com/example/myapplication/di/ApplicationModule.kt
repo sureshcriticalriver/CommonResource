@@ -1,9 +1,6 @@
 package com.demo.suresh.di
 
-import android.app.Application
 import com.example.myapplication.BuildConfig
-import com.example.myapplication.BuildConfig.BASE_URL
-import com.example.myapplication.network.RetrofitService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,7 +10,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 
@@ -24,18 +20,6 @@ class ApplicationModule {
     @Provides
     fun provideBaseUrl() = BuildConfig.BASE_URL
 
-   /* @Provides
-    @Singleton
-    fun getAppDatabase(context: Application): AppDatabase {
-        return AppDatabase.getAppDBInstance(context)
-    }
-
-    @Provides
-    @Singleton
-    fun getAppDao(appDatabase: AppDatabase): AppDao {
-        return appDatabase.getAppDao()
-    }
-*/
 
     @Singleton
     @Provides
@@ -64,11 +48,25 @@ class ApplicationModule {
     @Singleton
     fun getRetroInstance(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
     }
+
+
+    /* @Provides
+     @Singleton
+     fun getAppDatabase(context: Application): AppDatabase {
+         return AppDatabase.getAppDBInstance(context)
+     }
+
+     @Provides
+     @Singleton
+     fun getAppDao(appDatabase: AppDatabase): AppDao {
+         return appDatabase.getAppDao()
+     }
+ */
 
     /*@Provides
     @Singleton

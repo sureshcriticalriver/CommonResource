@@ -1,15 +1,19 @@
 package com.example.myapplication.viewmodel
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.di.MainRepository
 import com.example.myapplication.network.NetworkHelper
-import com.example.myapplication.network.RetrofitService
+import com.example.myapplication.network.NetworkResult
 import com.example.myapplication.utils.Utilities
+import com.google.gson.JsonObject
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import network.ApiInterface
+import retrofit2.HttpException
+import java.io.IOException
 import javax.inject.Inject
 
 @HiltViewModel
@@ -17,33 +21,41 @@ class ProductsViewModel @Inject constructor(private val mainRepository: MainRepo
                                             private val networkHelper: NetworkHelper
 ): ViewModel() {
 
-    var listCustomer = MutableLiveData<List<Any>>()
+    /*You make a ViewModel with LiveData (internal) and MutableLiveData (external)
+    Now you can use the data directly in views, fragments or activities*/
+    private val _status = MutableLiveData<Any>()
 
     init {
-        callApiMethod()
+        callApi()
     }
 
-    private fun callApiMethod() {
-
+    private fun callApi() {
         viewModelScope.launch {
-            if (networkHelper.isNetworkConnected()){
-                val result = mainRepository.getAllProducts()
-                if (result != null) {
-                    if(result.code() == 200) Utilities.logE("--res 11--"+result.body())
-                }else Utilities.logE("Error Occurred!")
+            if (networkHelper.isNetworkConnected()) {
+                //val result = mainRepository.getAllProducts()
+                try {
+                    val response = mainRepository.getAllProducts()
+                    if(response.code() == 200 || response.code() == 201){
+                        Utilities.logV("Res---"+response.body())
+
+                        _status.value = response.body()
+                    }else {
+                        _status.value = response.errorBody()
+
+                    }
+                } catch (ioe: IOException) {
+                    Utilities.logE("IOException "+ioe.message)
+                } catch (he: HttpException) {
+                    Utilities.logE("HttpException "+he.message())
+
+                }
+                Utilities.logV("get data =="+_status.value)
+
+
+            }else{
+                Utilities.logE("No Network")
             }
-
-
-            //Working
-            /*ApiResponse.loading(apiInterface?.getProducts() == null)
-            try {
-                ApiResponse.success(apiInterface?.getProducts())
-            }catch (exception: Exception) {
-                ApiResponse.error(data = null, message = exception.message ?: "Error Occurred!")
-            }*/
-
 
         }
     }
-
 }

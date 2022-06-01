@@ -5,6 +5,6 @@ import javax.inject.Inject
 
 class MainRepository @Inject constructor(private val apiInterface: ApiInterface) {
 
-    suspend fun getAllProducts() =  apiInterface.getProducts()
+    suspend fun getAllProducts() = apiInterface.getProducts()
 
 }
