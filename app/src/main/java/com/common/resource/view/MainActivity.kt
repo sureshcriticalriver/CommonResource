@@ -21,7 +21,5 @@ class MainActivity  : AppCompatActivity() {
 
          mainViewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
 
-
-
     }
 }
