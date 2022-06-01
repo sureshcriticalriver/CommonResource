@@ -1,4 +1,4 @@
-package com.example.myapplication.network
+package com.common.resource.network
 
 data class NetworkResult<out T>(val apiStatus: Status, val data: T?, val message: String?) {
 

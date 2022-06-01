@@ -1,4 +1,4 @@
-package network
+package com.common.resource.network
 
 import com.google.gson.JsonObject
 import retrofit2.Response

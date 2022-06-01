@@ -1,7 +1,6 @@
-package com.example.myapplication.utils
+package com.common.resource.utils
 
 import android.content.Context
-import com.example.myapplication.utils.MyExceptionHandler
 import android.content.Intent
 import android.os.Process
 import java.io.PrintWriter

@@ -1,9 +1,8 @@
-package com.example.myapplication.utils
+package com.common.resource.utils
 
-import com.example.myapplication.utils.ApplicationPreferences.getLog
+import com.common.resource.utils.ApplicationPreferences.getLog
 import kotlin.Throws
-import com.example.myapplication.view.MyApplication
-import com.example.myapplication.R
+import com.common.resource.view.MyApplication
 import android.os.Build.VERSION
 import androidx.core.content.ContextCompat
 import android.content.pm.PackageManager
@@ -40,6 +39,7 @@ import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
+import com.common.resource.R
 import java.io.*
 import java.lang.Exception
 import java.lang.StringBuilder

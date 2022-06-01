@@ -1,16 +1,12 @@
-package com.example.myapplication.viewmodel
+package com.common.resource.viewmodel
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.di.MainRepository
-import com.example.myapplication.network.NetworkHelper
-import com.example.myapplication.network.NetworkResult
-import com.example.myapplication.utils.Utilities
-import com.google.gson.JsonObject
+import com.common.resource.di.MainRepository
+import com.common.resource.network.NetworkHelper
+import com.common.resource.utils.Utilities
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException

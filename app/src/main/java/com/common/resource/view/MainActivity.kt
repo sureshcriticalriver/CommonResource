@@ -1,14 +1,13 @@
-package com.example.myapplication.view
+package com.common.resource.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.*
-import com.example.myapplication.R
-import com.example.myapplication.model.Products
-import com.example.myapplication.utils.Utilities
-import com.example.myapplication.viewmodel.ProductsViewModel
+import com.common.resource.R
+import com.common.resource.model.Products
+import com.common.resource.utils.Utilities
+import com.common.resource.viewmodel.ProductsViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity  : AppCompatActivity() {
@@ -19,13 +18,6 @@ class MainActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        Utilities.logD("--Debug--")
-        Utilities.logE("--Error--")
-        Utilities.logI("---Log I---")
-        Utilities.logV("---Log V--")
-        Utilities.logEwithoutLogStore("---LogE without log store ")
-
 
          mainViewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
 

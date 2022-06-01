@@ -1,11 +1,11 @@
-package com.demo.suresh.di
+package com.common.resource.di
 
-import com.example.myapplication.BuildConfig
+import com.common.resource.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import network.ApiInterface
+import com.common.resource.network.ApiInterface
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

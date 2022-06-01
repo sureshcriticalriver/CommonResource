@@ -1,6 +1,6 @@
-package com.example.myapplication.di
+package com.common.resource.di
 
-import network.ApiInterface
+import com.common.resource.network.ApiInterface
 import javax.inject.Inject
 
 class MainRepository @Inject constructor(private val apiInterface: ApiInterface) {
